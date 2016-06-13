@@ -1,3 +1,5 @@
+#application.properties
+
 ```
 # ===================================================================
 # COMMON SPRING BOOT PROPERTIES
