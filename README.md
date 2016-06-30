@@ -506,10 +506,11 @@ spring.data.solr.host=http://127.0.0.1:8983/solr # Solr host. Ignored if "zk-hos
 spring.data.solr.repositories.enabled=true # Enable Solr repositories.
 spring.data.solr.zk-host= # ZooKeeper host address in the form HOST:PORT.
 
-# DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+
+# 数据源（数据源自动配置 & 数据源属性）
 spring.datasource.continue-on-error=false # Do not stop if an error occurs while initializing the database.
 spring.datasource.data= # Data (DML) script resource reference.
-spring.datasource.driver-class-name= # Fully qualified name of the JDBC driver. Auto-detected based on the URL by default.
+spring.datasource.driver-class-name= # 完整的数据库驱动名称. 基于 url 自动探测.
 spring.datasource.initialize=true # Populate the database using 'data.sql'.
 spring.datasource.jmx-enabled=false # Enable JMX support (if provided by the underlying pool).
 spring.datasource.jndi-name= # JNDI location of the datasource. Class, url, username & password are ignored when set.
@@ -519,7 +520,7 @@ spring.datasource.max-wait=
 spring.datasource.min-evictable-idle-time-millis=
 spring.datasource.min-idle=8
 spring.datasource.name=testdb # Name of the datasource.
-spring.datasource.password= # Login password of the database.
+spring.datasource.password= # 登录密码
 spring.datasource.platform=all # Platform to use in the schema resource (schema-${platform}.sql).
 spring.datasource.schema= # Schema (DDL) script resource reference.
 spring.datasource.separator=; # Statement separator in SQL initialization scripts.
@@ -529,8 +530,8 @@ spring.datasource.test-on-return= # For instance `false`
 spring.datasource.test-while-idle= #
 spring.datasource.time-between-eviction-runs-millis= 1
 spring.datasource.type= # Fully qualified name of the connection pool implementation to use. By default, it is auto-detected from the classpath.
-spring.datasource.url= # JDBC url of the database.
-spring.datasource.username=
+spring.datasource.url= # 数据库 url
+spring.datasource.username= # 数据库用户名
 spring.datasource.validation-query=
 
 # H2 Web Console (H2ConsoleProperties)
